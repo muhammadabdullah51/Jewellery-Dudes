@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-commerce</title>
+  <link rel="stylesheet" href="signin.css">
+</head>
+<body>
+  <div class="wrapper">
+    <form id="loginForm" action="#">
+      <h2>Login</h2>
+      <div class="input-field">
+          <input type="text" id="email" required>
+          <label for="email">Enter your email</label>
+          <span id="emailError" class="error"></span>
+      </div>
+      <div class="input-field">
+          <input type="password" id="password" required>
+          <label for="password">Enter your password</label>
+          <span id="passwordError" class="error"></span>
+      </div>
+      <div class="forget">
+          <label for="remember">
+              <input type="checkbox" id="remember">
+              <span>Remember me</span>
+          </label>
+          <a href="#">Forgot password?</a>
+      </div>
+      <button type="submit">Log In</button>
+      <span id="messageSuccess" class="success"></span>
+      <div class="register">
+          <p>Don't have an account? <a href="signup.html">Register</a></p>
+      </div>
+  </form>
+  </div>
+  <script src="loginValidation.js"></script>
+</body>
+</html>
